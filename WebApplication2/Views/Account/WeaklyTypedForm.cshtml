@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "WeaklyTypedForm";
+}
+
+<h1>WeaklyTypedForm</h1>
+@using(Html.BeginForm("LoginPost","AccountController", FormMethod.Post))
+{
+    <div>
+        Username:@Html.TextBox("Username")
+    </div>
+    <div>
+        Password:@Html.TextBox("Password")
+    </div>
+    <div>
+        <input type="submit" value="login" />
+    </div>
+}
